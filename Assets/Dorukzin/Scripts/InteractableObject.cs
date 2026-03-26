@@ -27,4 +27,30 @@ public class InteractableObject : MonoBehaviour
         if (objectRenderer != null)
             objectRenderer.material.color = originalColor;
     }
+    public GameObject interactPrompt;
+
+    public void ShowPrompt()
+    {
+        if (interactPrompt != null)
+            interactPrompt.SetActive(true);
+   
+        Debug.Log(gameObject.name + " prompt açýlýyor");
+
+        if (interactPrompt != null)
+            interactPrompt.SetActive(true);
+    }
+    public void HidePrompt()
+    {
+        if (interactPrompt != null)
+            interactPrompt.SetActive(false);
+  
+        Debug.Log(gameObject.name + " prompt kapanýyor");
+
+        if (interactPrompt != null)
+            interactPrompt.SetActive(false);
+    }
+    public void Interact()
+    {
+        Debug.Log(gameObject.name + " ile etkileþim kuruldu.");
+    }
 }

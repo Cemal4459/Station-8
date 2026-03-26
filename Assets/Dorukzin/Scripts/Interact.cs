@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    public float distance = 4f;
+    public float distance = 1f;
     public Camera cam;
     public ScreenFade screenFade;
     public GameObject ePromptUI;
@@ -33,7 +33,7 @@ public class Interact : MonoBehaviour
 
         if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Etkileþim oldu");
+            Debug.Log("Kapý ile etkileþim oldu");
 
             if (screenFade != null)
                 screenFade.FadeToBlack();
