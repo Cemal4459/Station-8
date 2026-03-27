@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: dd6e709e0293a0a469e6d1c9179c939a
+timeCreated: 1577393556
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Prefabs/Station02_C.prefab
+  uploadId: 349319

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 807112b629486ea4486adcf29ea32d73
+timeCreated: 1560768208
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Models/Materials/Train02aCupe_BenchFabric01.mat
+  uploadId: 349319

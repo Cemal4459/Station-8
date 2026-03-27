@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2a740c1b504b42449b89482a027cf03f
+timeCreated: 1560768207
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Models/Materials/Train02aCupe_Doorglass.mat
+  uploadId: 349319

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0caa8f39b24ee0a4cb9b68148b369d9d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Scene/Station02/LightingData.asset
+  uploadId: 349319

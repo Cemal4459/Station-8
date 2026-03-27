@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 83b5782c35a43a7458de2aac2874c227
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Scene/Station02_Profiles/Station02 Post-processing
+    Profile.asset
+  uploadId: 349319

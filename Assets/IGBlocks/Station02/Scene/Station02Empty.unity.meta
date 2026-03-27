@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 02e5667e7839684489e31e69d7f6599e
+timeCreated: 1578901378
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Scene/Station02Empty.unity
+  uploadId: 349319

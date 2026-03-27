@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8abe341d765636246ba6e257f0e59a0f
+timeCreated: 1560766418
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161115
+  packageName: Train Station 02
+  packageVersion: 1.0
+  assetPath: Assets/IGBlocks/Station02/Models/Materials/Station02ArcMetall.mat
+  uploadId: 349319
