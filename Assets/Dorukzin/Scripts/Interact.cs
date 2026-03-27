@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    public float distance = 1f;
+    public float distance = 2f;
     public Camera cam;
     public ScreenFade screenFade;
     public GameObject ePromptUI;
@@ -15,7 +15,7 @@ public class Interact : MonoBehaviour
             cam = Camera.main;
 
         if (screenFade == null)
-            screenFade = FindObjectOfType<ScreenFade>();
+            screenFade = Object.FindFirstObjectByType<ScreenFade>();
 
         if (ePromptUI != null)
             ePromptUI.SetActive(false);
@@ -23,24 +23,20 @@ public class Interact : MonoBehaviour
 
     void Update()
     {
-        if (cam == null)
-        {
-            Debug.LogError("Cam atanmadý.");
-            return;
-        }
+        if (cam == null) return;
 
-        CheckForInteractable();
+        CheckInteractable();
 
         if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Kapý ile etkileþim oldu");
+            currentInteractable.Interact(); // NPC / kapý / item neyse çalýþýr
 
             if (screenFade != null)
                 screenFade.FadeToBlack();
         }
     }
 
-    void CheckForInteractable()
+    void CheckInteractable()
     {
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
         RaycastHit hit;
@@ -49,9 +45,9 @@ public class Interact : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, distance))
         {
-            if (hit.collider.CompareTag("Interactable"))
+            if (hit.collider.TryGetComponent(out InteractableObject interactable))
             {
-                newInteractable = hit.collider.GetComponent<InteractableObject>();
+                newInteractable = interactable;
             }
         }
 
@@ -67,9 +63,7 @@ public class Interact : MonoBehaviour
         }
 
         if (ePromptUI != null)
-        {
             ePromptUI.SetActive(currentInteractable != null);
-        }
     }
 
     void OnDisable()
