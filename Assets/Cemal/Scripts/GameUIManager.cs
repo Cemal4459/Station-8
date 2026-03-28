@@ -7,10 +7,19 @@ public class GameUIManager : MonoBehaviour
     public GameObject successPanel;
     public GameObject gameOverPanel;
 
+    public PlayerMovement playerMovement;
+    public MouseLook mouseLook;
+
     public void ShowSuccess()
     {
         bottomActionPanel.SetActive(false);
         successPanel.SetActive(true);
+
+        if (playerMovement != null)
+            playerMovement.canMove = false;
+
+        if (mouseLook != null)
+            mouseLook.canLook = false;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -21,6 +30,12 @@ public class GameUIManager : MonoBehaviour
         bottomActionPanel.SetActive(false);
         gameOverPanel.SetActive(true);
 
+        if (playerMovement != null)
+            playerMovement.canMove = false;
+
+        if (mouseLook != null)
+            mouseLook.canLook = false;
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -28,6 +43,12 @@ public class GameUIManager : MonoBehaviour
     public void ContinueGame()
     {
         successPanel.SetActive(false);
+
+        if (playerMovement != null)
+            playerMovement.canMove = true;
+
+        if (mouseLook != null)
+            mouseLook.canLook = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -37,8 +58,7 @@ public class GameUIManager : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("Exit tiklandi");
-        Application.Quit();
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void RestartGame()
@@ -48,7 +68,6 @@ public class GameUIManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit tiklandi");
-        Application.Quit();
+        SceneManager.LoadScene("MainMenuScene");
     }
 }
